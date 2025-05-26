@@ -1,0 +1,29 @@
+﻿@model IEnumerable<u23717662_Prac7.Models.Publication>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Publications</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card">
+                <img src="@item.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Type</h5>
+                    <h6>@item.Title</h6>
+                    <p>by @item.Author.Name</p>
+                    <p class="card-text">
+                        @item.Summary
+                    </p>
+                    <a href="#" class="card-link">Read More</a>
+                    <p class="card-text"><small class="text-muted">@item.ToString()</small></p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
