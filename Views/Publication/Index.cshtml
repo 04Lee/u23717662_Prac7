@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Publications</h2>
+<h2  class="h2">Publications</h2>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
@@ -20,7 +20,7 @@
                     <p class="card-text">
                         @item.Summary
                     </p>
-                    <a href="#" class="card-link">Read More</a>
+                    <a href="@item.MainStoryURL" class="card-link">Read More</a>
                     <p class="card-text"><small class="text-muted">@item.ToString()</small></p>
                 </div>
             </div>

@@ -18,6 +18,17 @@ select,
 textarea {
     max-width: 280px;
 }
-.body{
-    background-color:cornflowerblue;
+.card-body {
+    background-color: lightcyan
 }
+
+.card-link:hover {
+    color: lightblue
+}
+
+.card {
+    height: auto;
+    width: auto
+}
+.h2 {
+    font-family: 'Copperplate Gothic'}

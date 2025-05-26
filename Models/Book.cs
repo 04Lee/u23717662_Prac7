@@ -10,10 +10,10 @@ namespace u23717662_Prac7.Models
         public String Editions { get; set; }
         public override string ToString()
         {
-            string res = "";
-            res = $"The date of publication is {PublicationDate:dddd, dd MMMM yyyy}";
-            res += $" and the number of editions is {Editions}";
-            return res;
+            string sure = "";
+            sure = $"The date of publication is {PublicationDate:dddd, dd MMMM yyyy}";
+            sure += $" and the number of editions is {Editions}";
+            return sure;
         }
     }
 }

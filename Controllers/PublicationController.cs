@@ -9,7 +9,7 @@ namespace u23717662_Prac7.Controllers
 {
     public class PublicationController : Controller
     {
-        // GET: Publication
+        
         public ActionResult Index()
         {
             FakeRepository repository = new FakeRepository();
